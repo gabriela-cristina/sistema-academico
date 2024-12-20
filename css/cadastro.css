@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+ul.menu {
+    background-color: #210f49; /* Define a cor de fundo do menu principal */
+    display: flex; /* Exibe os itens do menu lado a lado */
+    list-style: none; /* Remove os marcadores de lista */
+    padding: 0; /* Remove o espaçamento interno */
+	width: 100%;
+    justify-content: flex-end;
+    gap: 20px;
+    margin-right: 20px
+
+    
+    
+}
+
+/* Estilização para os itens do menu principal */
+ul.menu li.menu-item {
+    position:relative; /* Permite posicionar os submenus corretamente */
+    margin-left: 4px; /* Define o espaçamento entre os itens do menu */
+    justify-content: flex-end;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Estilização para os links dos itens do menu principal */
+ul.menu li a {
+    color: white; /* Define a cor do texto do menu principal */
+    padding: 4px; /* Define o espaçamento interno */
+    text-decoration: none; /* Remove a decoração de texto */
+    display: block; /* Faz com que o link ocupe a largura total do item do menu */
+}
+
+/* Define o estilo dos submenus e oculta-os inicialmente */
+ul.menu li .submenu {
+    display: none; /* Esconde os submenus por padrão */
+    position: absolute; /* Permite posicionar os submenus de forma absoluta */
+    background-color: #37194b; /* Define a cor de fundo dos submenus */
+    width: 70px; /* Define a largura dos submenus */
+    padding: 10px; /* Define o espaçamento interno dos submenus */
+    list-style: none; /* Remove os marcadores de lista */
+    top: 90%; /* Posiciona o submenu abaixo do item do menu principal */
+    left: 0; /* Alinha o submenu com o lado esquerdo do item do menu principal */
+    z-index: 2; /* Define a ordem de empilhamento, acima do conteúdo */
+}
+
+/* Mostra o submenu quando o item do menu principal é hoverado */
+ul.menu li.menu-item:hover > .submenu {
+    display: block; /* Exibe o submenu ao passar o mouse no item do menu principal */
+}
+
+/* Estilização para os itens dentro dos submenus */
+ul.submenu li {
+    display: block; /* Exibe os itens dos submenus como blocos */
+}
+
+/* Estilização para os links dentro dos submenus */
+ul.submenu li a {
+    color: white; /* Define a cor do texto dos submenus */
+    text-decoration: none; /* Remove a decoração de texto */
+}
+
+/* Adicione margens à tabela */
+        table {
+            margin: 20px;
+            border-collapse: collapse; /* Mescla as bordas da tabela */
+        }
+        th, td {
+            border: 1px solid black; /* Adicione bordas às células */
+            padding: 5px; /* Adicione espaço interno às células */
+        }
+
+#logo {
+ margin: 0 auto;
+height: 200px;
+text-align: center;
+
+
+}
+
+
+header {
+   
+    /* Colocar objetos ao lado um do outro */
+    display: flex;
+    background-color: #210f49;
+    width: 100%; /* Largura total */
+    height: 100px; /* Altura do cabeçalho */
+    margin: 0; /* Remove margem externa */
+    justify-content: space-between; /*n tirar */
+    position: sticky;/*n tirar */ 
+    top: 0; /*n tirar*/
+    align-items: center;
+    
+    
+     }
+    
+html{
+    scroll-behavior: smooth;
+    }
+
+    footer{
+        font-family:Arial, Helvetica, sans-serif;
+        margin: 0;
+        
+        box-sizing: border-box;
+        background-color: #210f49;
+        padding: 30px 0;
+        
+    }
+    
+    .container-footer{
+        max-width: 1400px;
+        padding: 0 4%;
+        margin: auto;
+    
+    }
+    
+    .row-footer{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .footer-col{
+        width: 25%;
+        padding: 0 15px;
+    }
+    
+    .footer-col h4{
+        font-size: 22px;
+        color: #ffffff;
+        margin-bottom: 20px;
+        font-weight: 500;
+        position: relative;
+        text-transform: uppercase;
+    }
+    
+    .footer-col ul{
+        list-style: none;
+    }
+    
+    .footer-col ul li{
+        margin: 10px 0;
+    }
+    
+    .footer-col ul li a{
+        font-size: 16px;
+        text-transform: capitalize;
+        color: white;
+        text-decoration: none;
+        font-weight: 300;
+        display: block;
+        transition: all 0.3s ease;
+    }
+    .footer-col .midias-sociais{
+        margin-top: 30px;
+    }
+    
+    .footer-col .midias-sociais a{
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        height: 40px;
+        width: 40px;
+        margin: 0 10px 10px 0;
+        text-decoration: none;
+        border-radius: 50%;
+        color: white;
+        border: 1px solid white;
+        transition: all 0.5s ease;
+    
+    }
+    
+    .footer-col .midias-sociais a i{
+        font-size: 20px;
+    }
+    
+    .container2{
+        width: 80%;
+        height: 80vh;
+        display: flex;
+        box-shadow: 5px 5px 10px rgb(127, 127, 235) ;
+        
+        
+     color: rgba(60, 18, 99, 0.692);
+    }
+    
+    .form-image{
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #ba86ff;
+       
+        padding: 1rem;
+    }
+    
+    .form-image img{
+        width: 31rem;
+    }
+    
+    .form{
+        width: 50%;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 3rem;
+        background-color: rgb(255, 255, 255);
+    }
+    
+    body{
+        width: 100%;
+        height: 100vh;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        background-color:#d1bbff;
+        background-image: url(../imagem/banner1.png);
+        background-size: cover;
+    }
+    .logo {
+        margin: 0 auto;
+       height: 50px;
+       text-align: center;
+       
+       
+       }
+
+.form-header{
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: space-between;
+    color: #361a72;
+}
+       
+    
+    

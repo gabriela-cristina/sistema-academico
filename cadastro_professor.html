@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+
+<html lang = "pt-br">
+
+<!-- ACRESCENTADO TELA DE CONSULTA,  DEPOIS DO CADASTRO - UTILIZADO COMANDO SELECT -->
+
+<!--https://www.w3schools.com/   site referência
+
+https://pt.stackoverflow.com/questions/280758/mascara-no-form-somente-em-html-e-css
+
+--> 
+
+      <head>
+	  
+
+	           <meta name="author" content="Wanderley Lopes Batista">    
+               <meta charset="UTF-8">
+	           <title>Cadastro de Professor</title>
+			   
+			   <link rel="stylesheet" type="text/css" href="css/cadastro.css" />     
+			   
+			  <SCRIPT type="text/javascript" src="js/codigo.js">
+			
+		      </SCRIPT>
+		   
+			  
+	  </head>
+	   
+	  
+
+<body>
+	<div class="container2">
+	
+		<div class="form-image">
+			<img src="imagem/undraw_shopping_a55o.svg" alt="">
+			
+		</div>
+		<div class="form">
+			<form action="#">
+				<div class="form-header">
+					<div class="inicio">
+						<h2> Cadastre-se</h2>
+						
+					</div>
+	
+				</div>
+		
+
+
+
+
+<form name="formprofessores" method="post" action="enviar_professor.php" onsubmit="return testa_form()">
+
+<!-- &nbsp; "Non-breaking space" - Espaço sem quebra -->
+<div class="input-group">
+	<div class="input-box">
+			<label for="cpf">CPF:</label>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* <input type="text" id="customer['cpf']" name="cpf" placeholder="###.###.###-##" autocomplete="off"  oninput="mascara(this, 'cpf')"> 
+			(sem espaços, pontos ou traços) 
+	</div>
+		<div class="input-box">
+
+			<label for="professor">Nome do frofessor:</label>
+			* <input type="text" id="professor" name="professor" style="width: 310px;" /> 
+
+		</div>
+		<div class="input-box">
+
+			<label for="data">Data de nascimento:</label>
+			&nbsp;&nbsp;&nbsp;&nbsp;<input type="date" id="data" name="data"> 
+
+			SEXO: <input type="radio" name="sexo" value="masculino">Masculino
+				<input type="radio" name="sexo" value="feminino">Feminino 
+
+		</div>
+
+		<div class="input-box">
+
+			<label for="endereco">Endereço:</label>
+			<input type="text" id="endereco" name="endereco" style="width: 300px;" > 
+		</div>
+		<div class="input-box">
+
+			<label for="complemento">Complemento:</label>
+			<input type="text" id="complemento" name="complemento" style="width: 263px;"> 
+
+		</div>
+		<div class="input-box">
+
+			<label for="cep">CEP:</label>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="cep" name="cep" placeholder="#####-###" autocomplete="off"  oninput="mascara(this, 'cep')"> 
+
+		</div>
+		<div class="input-box">
+
+			<label for="bairro">Bairro:</label>
+			<input type="text" id="bairro" name="bairro"  style="width: 327px;"> 
+		</div>
+		<div class="input-box">
+
+			<label for="cidade">Cidade:</label>
+			<input type="text" id="cidade" name="cidade"/>
+
+		</div>
+		<div class="input-box">
+
+			<label for="estado">Estado:</label>
+			<select name="estado" id="select">
+
+			<option value="">SELECIONE O ESTADO:</option>
+			<option value="ac">Acre</option>
+			<option value="al">Alagoas</option>
+			<option value="ap">Amapá</option>
+			<option value="am">Amazonas</option>
+			<option value="ba">Bahia</option>
+			<option value="ce">Ceará</option>
+			<option value="df">Distrito Federal</option>
+			<option value="es">Espírito Santo</option>
+			<option value="go">Goiás</option>
+			<option value="ma">Maranhão</option>
+			<option value="ms">Mato Grosso do Sul</option>
+			<option value="mt">Mato Grosso</option>
+			<option value="mg">Minas Gerais</option>
+			<option value="pa">Pará</option>
+			<option value="pb">Paraíba</option>
+			<option value="pr">Paraná</option>
+			<option value="pe">Pernambuco</option>
+			<option value="pi">Piauí</option>
+			<option value="rj">Rio de Janeiro</option>
+			<option value="rn">Rio Grande do Norte</option>
+			<option value="rs">Rio Grande do Sul</option>
+			<option value="ro">Rondônia</option>
+			<option value="rr">Roraima</option>
+			<option value="sc">Santa Catarina</option>
+			<option value="ac">Acre</option>
+			<option value="sp">São Paulo</option>
+			<option value="se">Sergipe</option>
+			<option value="to">Tocantins</option>
+			</select>
+		</div>
+
+			<!-- style - Estilo inline -->
+		<div class="input-box">
+			<label for="telefone">Telefone:</label>
+			<input type="text" id="telefone" name="telefone" placeholder="(##) #####-####" autocomplete="off"  style="width: 150px;" oninput="mascara(this, 'tel')"> 
+		</div>
+			
+		<div class="input-box">
+			<label for="formacao">Formação:</label>
+			<input type="text" id="formacao" name="formacao" style="width: 300px;" > 
+
+		</div>
+		<div class="input-box">
+			
+			<label for="titulacao">Titulação:</label>
+			<select name="titulacao" id="select">
+		</div>
+			<div class="input-box">
+
+			<option value="">Selecione a titulação:</option>
+			<option value="graduacao">Graduação</option>
+			<option value="mestrado">Mestrado</option>
+			<option value="doutorado">Doutorado</option>
+			</select>
+			<br><br>
+			</div>
+
+			<button><a href="index.html">Retornar</a></button>
+			&nbsp;&nbsp;&nbsp;<input type="reset" value="LIMPAR" name="limpar">
+			&nbsp;&nbsp;&nbsp;<input type="submit" value="ENVIAR" name="Enviar" />
+
+
+			</form>
+
+			</fieldset>
+
+
+
+
+</body>
+
+
+</html>

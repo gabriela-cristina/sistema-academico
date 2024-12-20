@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+
+<HTML lang = "pt-br">
+
+<!--https://www.w3schools.com/   site referência
+
+https://www.w3c.br/
+
+O Consórcio World Wide Web (W3C) é um consórcio internacional no qual organizações filiadas,
+uma equipe em tempo integral e o público trabalham juntos para desenvolver padrões para a Web.
+
+--> 
+
+      <HEAD>
+       
+	           <meta name="author" content="Wanderley Lopes Batista">
+               <meta charset="UTF-8">
+	           <meta name="viewport" content="width=device-width, initial-scale=1">   
+			   
+	           <title>Controle Academico</title>
+               <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+			   <link rel="stylesheet" href="css/estilo.css">
+	  </HEAD>
+	   
+	  
+   <BODY>
+        <header> 
+            
+            
+                <img  class="logo" src="imagem/logobranca.png" alt="">
+
+
+   <!--Menus e Submenus.  Caso ocorra erro no Google Chrome, limpar cache -->
+   
+
+   <ul class="menu"> 
+
+    <li class="menu-item">
+        <a href="">Alunos</a>
+        <ul class="submenu">
+            <li><a href="cadastro_aluno.html">Cadastro</a></li>
+        
+        </ul>
+
+    </li>
+    <li class="menu-item">
+        <a href="">Professores</a>
+        <ul class="submenu">
+            <li><a href="cadastro_professor.html">Cadastro</a></li>
+          
+        </ul>
+    </li>
+   
+</ul>
+
+
+
+
+</header>
+
+
+<main>
+   <img id="foto"  src="imagem/banner1.png" alt="">
+   
+   <br>
+   
+ 
+            
+			
+
+    <br>
+<p id="titulo">Seja bem vindo ao Controle Acadêmico da <a href="https://inscricao.prozeducacao.com.br/home-2024/?utm_source=google&utm_medium=cpc&utm_campaign=https%3A%2F%2Finscricao.prozeducacao.com.br%2Fhome-2024%2F%3Futm_source%3Dgoogle&utm_medium=cpc&utm_campaign=MG_Google_Search_BeloHorizonte_Centro&gad_source=1&gclid=CjwKCAiA9vS6BhA9EiwAJpnXwzEFBkHxjGIAoRZGU3eNk53fFNLrtQpzEX2L-Ofh362yiqVqUFUfEBoC8RcQAvD_BwE">Proz Educação</a></p>
+
+<p id="bem_vindo"> é com grande entusiasmo que recebemos você em nossa instituição, 
+    um ambiente dedicado à excelência no ensino técnico e à formação de profissionais altamente 
+    capacitados. Aqui, oferecemos uma metodologia inovadora e práticas educacionais que conectam 
+    teoria e experiência, preparando nossos alunos para os desafios do mercado de trabalho. </p>
+
+<p id="bem_vindo"> Através dessa plataforma, você pode consultar a qualquer momento suas <A HREF="notas.html">notas,</A>e <A HREF="frequencias.html">frequências.</A>
+    acompanhando seu desempenho de forma contínua. Assim, você tem total controle sobre o seu 
+    progresso, podendo se organizar e buscar apoio sempre que necessário. Nossa equipe está 
+    sempre à disposição para orientações e ajudar você a alcançar seus objetivos com excelência.
+     e também suas <p> <br>
+
+<section class="slider">
+    <div class="slider-content">
+
+        <input type="radio" name="btn-radio" id="radio1">
+        <input type="radio" name="btn-radio" id="radio2">
+        <input type="radio" name="btn-radio" id="radio3">
+
+        <div class="slide-box primeiro">
+           
+            <a href="cadastro_aluno.html"> <img src="imagem/1.png"></a>
+            <img class="img-mobile" src="imagem/1pequeno.png" alt="slide 1">
+            
+        </div>
+
+        <div class="slide-box ">
+            
+            <a href="cadastro_professor.html"> <img src="imagem/2.png"></a>
+            <img class="img-mobile" src="imagem/2pequeno.png" alt="slide 1">
+            
+        </div>
+        
+        <div class="slide-box ">
+            
+            <a href="#"> <img src="imagem/3.png"></a>
+            <img class="img-mobile" src="imagem/3pequeno.png" alt="slide 3">
+            
+            
+        </div>
+
+        <div class="nav-auto">
+            <div class="autto-btn1"> </div>
+            <div class="autto-btn2"> </div>
+            <div class="autto-btn3"> </div>
+        </div>
+
+        <div class="nav-manual">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+        </div>
+    </div> </section>
+       
+</main>
+        
+
+<script>
+    var radio = document.querySelector('.manual-btn')
+    var cont = 1
+
+    document.getElementById('radio1').checked = true
+
+    setInterval(() => {
+        proximaImg()
+    }, 5000)
+
+    function proximaImg(){
+        cont++
+
+        if(cont > 3){
+            cont = 1
+        }
+
+        document.getElementById('radio'+cont).checked = true
+    }
+</script>
+
+<br>
+<br>
+<br>
+
+
+<footer>
+    
+    <div class="container-footer">
+        <div class="row-footer">
+            <figure>
+                <img class="logo" src="imagem/logobranca.png" alt="">
+            </figure>
+           
+            <div class="footer-col">
+                <h4>Empresa</h4>
+                <ul>
+                    <li> <a href="#">Quem somos</a></li>
+                    <li> <a href="#">Nossos serviços</a></li>
+                    <li> <a href="#">Política de privacidade</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Ajuda</h4>
+                <ul>
+                    <li> <a href="#">Reclame aqui</a></li>
+                    <li> <a href="#">Trabalhe conosco</a></li>
+                    
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>teste</h4>
+                <div class="form-sub">
+                    <form >
+                        <input type="email" placeholder="Digite o seu e-mail">
+                        <button>Subescrever</button>
+                    </form>
+                </div>
+
+                <div class="midias-sociais">
+                    <a href=""> <i class="fa fa-instagram"></i></a>
+                    <a href=""> <i class="fa fa-linkedin"></i></a>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+
+
+</footer>
+
+
+ </BODY>			
+
+</HTML>
